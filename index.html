@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Designing Your Life — A Framework Guide</title>
+<style>
+:root{
+  --bg:#faf8f4; --card:#ffffff; --text:#1f2420; --muted:#5c6b60;
+  --accent:#3d6b52; --accent2:#c97b3f; --border:#e4ddd0;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#151815; --card:#1e221e; --text:#eae6dc; --muted:#a3ab9f;
+    --accent:#7cb99a; --accent2:#e0a06a; --border:#2c322b;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#151815; --card:#1e221e; --text:#eae6dc; --muted:#a3ab9f;
+  --accent:#7cb99a; --accent2:#e0a06a; --border:#2c322b;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  line-height:1.55;
+}
+.wrap{max-width:920px;margin:0 auto;padding:48px 20px 80px;}
+header{margin-bottom:40px;}
+h1{font-size:2.1rem;margin:0 0 8px;letter-spacing:-0.02em;}
+.sub{color:var(--muted);font-size:1.05rem;max-width:60ch;}
+.intro{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px 24px;margin:28px 0 44px;}
+.intro p{margin:0 0 10px;}
+.intro p:last-child{margin:0;}
+h2.section-title{font-size:1.5rem;margin:56px 0 6px;border-top:1px solid var(--border);padding-top:36px;}
+.section-sub{color:var(--muted);margin:0 0 24px;font-size:0.95rem;}
+.grid{display:grid;grid-template-columns:1fr;gap:18px;}
+@media(min-width:680px){.grid{grid-template-columns:1fr 1fr;}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;}
+.card h3{margin:0 0 4px;font-size:1.08rem;}
+.tag{display:inline-block;font-size:0.72rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;}
+.card p{margin:0 0 10px;font-size:0.94rem;color:var(--text);}
+.card .do{font-size:0.88rem;color:var(--muted);border-left:3px solid var(--accent2);padding-left:10px;}
+.source{font-size:0.78rem;color:var(--muted);font-style:italic;margin-top:10px;}
+.plan{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px 26px;}
+.plan ol{margin:0;padding-left:20px;}
+.plan li{margin-bottom:14px;}
+.plan li b{color:var(--accent);}
+.prompts{list-style:none;padding:0;margin:0;display:grid;gap:10px;}
+.prompts li{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:12px 16px;font-size:0.95rem;}
+footer{margin-top:60px;color:var(--muted);font-size:0.85rem;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>🧭 Designing a Life You Actually Want</h1>
+  <p class="sub">A working guide to the frameworks psychology and design research offer for figuring out what you want — when "just think about it" hasn't worked.</p>
+</header>
+
+<div class="intro">
+<p><b>Why this feels hard:</b> most people try to "find" their life purpose the way you'd look for lost keys — by staring harder. Research suggests the opposite works better: purpose and direction usually emerge from <i>action and reflection</i>, not introspection alone. The frameworks below are tools for generating data about yourself through small experiments, structured reflection, and pattern-spotting — not for having a single epiphany.</p>
+<p>Use this as a toolkit, not a checklist. Pick 2–3 that resonate, actually do the exercises, and let a direction form over weeks, not one evening.</p>
+</div>
+
+<h2 class="section-title">Self-Knowledge Frameworks</h2>
+<p class="section-sub">What are you actually made of — strengths, values, needs?</p>
+<div class="grid">
+
+<div class="card">
+<span class="tag">Values</span>
+<h3>Schwartz's Theory of Basic Values</h3>
+<p>A cross-culturally validated map of 10 universal human values (e.g. self-direction, achievement, benevolence, security) that often conflict with each other — meaning your stress may come from pursuing two incompatible values at once.</p>
+<p class="do">Do: Rank the 10 values by importance to you, then check which ones your current life actually reflects. The gaps are your friction points.</p>
+<div class="source">Schwartz, 1992 — replicated across 80+ countries</div>
+</div>
+
+<div class="card">
+<span class="tag">Strengths</span>
+<h3>VIA Character Strengths</h3>
+<p>Peterson & Seligman identified 24 character strengths (curiosity, persistence, fairness, etc.) that correlate with wellbeing when used regularly — more reliable than "passion" as a starting point since passions are often discovered by using strengths, not the reverse.</p>
+<p class="do">Do: Take the free VIA Survey, then redesign one week to deliberately use your top 3 strengths daily.</p>
+<div class="source">Peterson & Seligman, 2004; VIA Institute</div>
+</div>
+
+<div class="card">
+<span class="tag">Motivation</span>
+<h3>Self-Determination Theory</h3>
+<p>Deci & Ryan's research shows sustained motivation and wellbeing depend on three psychological needs: <b>autonomy</b> (choice), <b>competence</b> (growth), and <b>relatedness</b> (connection). Directions that starve any one of these tend to feel hollow even when "successful."</p>
+<p class="do">Do: Score your current job/life 1–10 on each need. The lowest score usually points to what to redesign first.</p>
+<div class="source">Deci & Ryan, 1985–2000, hundreds of replications</div>
+</div>
+
+<div class="card">
+<span class="tag">Flow</span>
+<h3>Csikszentmihalyi's Flow</h3>
+<p>Activities where challenge closely matches skill produce "flow" — deep absorption and intrinsic reward. Tracking when you lose track of time is a more honest signal of real interest than what you think you "should" like.</p>
+<p class="do">Do: For 2 weeks, jot down moments you lost track of time. Look for a pattern in the type of activity, not the label.</p>
+<div class="source">Csikszentmihalyi, 1990, "Flow"</div>
+</div>
+
+</div>
+
+<h2 class="section-title">Future-Orientation Frameworks</h2>
+<p class="section-sub">Because you can't choose a direction you've never imagined.</p>
+<div class="grid">
+
+<div class="card">
+<span class="tag">Exercise</span>
+<h3>Best Possible Self</h3>
+<p>Writing in detail about your best possible future self across life domains (career, relationships, health) for 20 minutes reliably increases optimism and wellbeing in randomized studies — it works better than journaling about the present.</p>
+<p class="do">Do: Write 20 minutes, uninterrupted, on "my life in 5 years if everything went as well as it realistically could."</p>
+<div class="source">King, 2001, Personality and Social Psychology Bulletin</div>
+</div>
+
+<div class="card">
+<span class="tag">Identity</span>
+<h3>Possible Selves</h3>
+<p>Markus & Nurius's research shows we're motivated less by abstract goals than by vivid images of who we could become — including feared selves. Naming both your hoped-for and feared future self clarifies what you're actually steering toward or away from.</p>
+<p class="do">Do: Write one paragraph on your "hoped-for self" and one on your "feared self" 10 years out. Compare them to your current trajectory.</p>
+<div class="source">Markus & Nurius, 1986, American Psychologist</div>
+</div>
+
+<div class="card">
+<span class="tag">Design</span>
+<h3>The Odyssey Plan</h3>
+<p>From Stanford's "Designing Your Life" course: sketch three different 5-year plans for your life — (1) your current path extended, (2) what you'd do if that path vanished, (3) what you'd do if money/reputation weren't a factor. Comparing plans reveals real preferences.</p>
+<p class="do">Do: Draft all three as rough timelines, then rate each for engagement, energy, and coherence — not "correctness."</p>
+<div class="source">Burnett & Evans, 2016, "Designing Your Life"</div>
+</div>
+
+<div class="card">
+<span class="tag">Wellbeing</span>
+<h3>PERMA Model</h3>
+<p>Seligman's model of flourishing has 5 measurable pillars: Positive emotion, Engagement, Relationships, Meaning, Accomplishment. A life goal that only serves one pillar (usually Accomplishment) tends to under-deliver on satisfaction.</p>
+<p class="do">Do: Score your current life 1–10 on each pillar. Design your next goal to raise your weakest one.</p>
+<div class="source">Seligman, 2011, "Flourish"</div>
+</div>
+
+</div>
+
+<h2 class="section-title">Practical / Applied Tools</h2>
+<p class="section-sub">Less rigorously "proven," but widely used and genuinely useful for structuring the search.</p>
+<div class="grid">
+
+<div class="card">
+<span class="tag">Prototype</span>
+<h3>Life Design Prototyping</h3>
+<p>Instead of choosing a life direction analytically, run small, cheap experiments — a short course, an informational interview, a weekend trying a business idea — and let real data (not imagination) tell you if it fits. This is the core method of Design Thinking applied to life.</p>
+<p class="do">Do: Pick one Odyssey Plan option and design a 1–2 week "prototype experience" of it this month.</p>
+<div class="source">Burnett & Evans, Stanford d.school</div>
+</div>
+
+<div class="card">
+<span class="tag">Synthesis</span>
+<h3>Ikigai</h3>
+<p>The popular 4-circle model (what you love / are good at / the world needs / can be paid for) is a folk framework, not a rigorous theory — but it's a useful synthesis checklist once you've gathered real data from the exercises above, rather than a starting point on its own.</p>
+<p class="do">Do: Fill the 4 circles only after you've done the strengths and values exercises — use real findings, not guesses.</p>
+<div class="source">Popularized via Okinawan longevity research; conceptual model</div>
+</div>
+
+<div class="card">
+<span class="tag">Filter</span>
+<h3>Regret Minimization</h3>
+<p>A simple decision filter: imagine yourself at 80 looking back — which choice would you regret not trying? Not empirically tested as a framework, but effective at cutting through short-term fear when the "safe" and "true" options diverge.</p>
+<p class="do">Do: For any option you're avoiding out of fear, write your 80-year-old self's one-line verdict on it.</p>
+<div class="source">Popularized by Jeff Bezos; informal heuristic</div>
+</div>
+
+<div class="card">
+<span class="tag">Goals</span>
+<h3>Goal-Setting Theory</h3>
+<p>Once a direction starts forming, Locke & Latham's decades of research show specific, moderately difficult goals with feedback loops outperform vague ones ("do your best") almost every time — direction-finding and goal execution are different skills.</p>
+<p class="do">Do: Once you have a tentative direction, convert it into one specific, time-bound goal with a review checkpoint.</p>
+<div class="source">Locke & Latham, 2002, American Psychologist</div>
+</div>
+
+</div>
+
+<h2 class="section-title">A 30-Day Way to Use This</h2>
+<p class="section-sub">A sequence, not a checklist — each step feeds the next.</p>
+<div class="plan">
+<ol>
+<li><b>Days 1–3 —</b> Do the Best Possible Self writing exercise and the VIA Strengths survey.</li>
+<li><b>Days 4–7 —</b> Rank your Schwartz values and score your life on SDT's 3 needs and PERMA's 5 pillars. Note the biggest gaps.</li>
+<li><b>Days 8–10 —</b> Track flow moments daily. Write your hoped-for and feared future selves.</li>
+<li><b>Days 11–14 —</b> Draft your three Odyssey Plans using everything gathered so far.</li>
+<li><b>Days 15–20 —</b> Choose the most energizing Odyssey Plan and design a small, real-world prototype experiment for it.</li>
+<li><b>Days 21–28 —</b> Run the prototype. Journal what it confirmed or ruled out.</li>
+<li><b>Days 29–30 —</b> Fill in an Ikigai check using real findings, then set one specific goal-setting-theory goal for the next 90 days.</li>
+</ol>
+</div>
+
+<h2 class="section-title">Reflection Prompts to Return To</h2>
+<ul class="prompts">
+<li>What did I do in the last month that made time disappear?</li>
+<li>Which of my current commitments serves a value I don't actually hold anymore?</li>
+<li>If I removed the fear of judgment, what would I try for 3 months?</li>
+<li>Which of my psychological needs (autonomy, competence, relatedness) is most starved right now?</li>
+<li>What would my feared future self tell me to stop doing today?</li>
+</ul>
+
+<footer>Built as a practical synthesis of positive psychology, motivation science, and design-thinking research. Not a substitute for professional career or life coaching.</footer>
+</div>
+</body>
+</html>
